@@ -1,0 +1,102 @@
+.page{
+  background: linear-gradient(45deg,#4158d0,#c850c0)
+
+}
+.enhetsregisteret-container {
+  background-color: #f6f7f8;
+  color: #333;
+  padding: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1 {
+  color: black;
+  font-weight: 500;
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+input[type="text"] {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.export-button {
+  background-color: cyan;
+  color: black;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.enhetsregisteret-table {
+  /* width: 100%; */
+  /* border-collapse: collapse; */
+  border-collapse: separate;
+
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); */
+  /* background-color: #fff; */
+  table-layout: fixed;
+  border-spacing: 0;
+
+}
+.table-container {
+  overflow-x: auto;
+  margin: 0 auto;
+  max-width: 1300px;
+  padding-bottom: 10px;
+
+}
+
+.frozen-column {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+}
+  
+  .enhetsregisteret-table th,
+  .enhetsregisteret-table td {
+    /* padding: 10px; */
+    padding: 12px;
+    white-space: nowrap;
+
+    font-weight: 300;
+    border: 1px solid #ccc;
+  }
+  
+  .enhetsregisteret-table th {
+    background-color: black;
+    font-weight: 300;
+    color: #fff;
+    padding: 12px;
+    /* font-weight: 600; */
+    text-align: center;
+  }
+  
+  .enhetsregisteret-table td {
+    
+    text-align: left;
+  }
+  
+  .enhetsregisteret-table tbody tr:nth-child(even) {
+    background-color: #f6f7f8;
+    font-size: 14px;
+  }
+  .enhetsregisteret-table tbody tr:nth-child(odd) {
+    background-color: #e9ecef;
+    font-size: 14px;
+  }
+  .table-row > td:first-child {
+    position: sticky;
+    left: 0;
+    background-color: #f8f9fa;
+    z-index: 2;
+  }
